@@ -1,0 +1,44 @@
+package main
+
+import "fmt"
+
+/*
+https://leetcode.com/problems/median-of-two-sorted-arrays/
+
+There are two sorted arrays nums1 and nums2 of size m and n respectively.
+
+Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
+
+You may assume nums1 and nums2 cannot be both empty.
+
+Example 1:
+
+nums1 = [1, 3]
+nums2 = [2]
+
+The median is 2.0
+Example 2:
+
+nums1 = [1, 2]
+nums2 = [3, 4]
+
+The median is (2 + 3)/2 = 2.5
+
+ */
+func MedianOfTwoArray(array1, array2 []int) float64 {
+	in := len(array1) + len(array2)
+	median := 0
+	fmt.Println(in)
+	if in%2 != 0 {
+	} else {
+
+	}
+	return float64(median)
+}
+
+func main() {
+	array1 := []int{1, 3, 4}
+	array2 := []int{5, 6, 7}
+
+	fmt.Println(MedianOfTwoArray(array1, array2))
+}
